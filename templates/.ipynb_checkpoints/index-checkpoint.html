@@ -1,0 +1,154 @@
+<!-- This is GUI for Credit Card Fraud Detection Application Using Machine Learning Classifer -->
+
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Fraud Detection App</title>
+
+  <style>
+    /* CSS code for button */
+    body {
+      background-image: url('static/images/fraud.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    /* CSS code for button */
+    .button_css {
+    color: #494949 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 20px;
+    border: 4px solid #494949 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    }
+    
+    .button_css:hover {
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
+    }
+  </style>
+
+</head>
+
+<body>
+
+ 
+ 
+ <div class="login">
+	
+    <!-- Get input for predict the  fraud transaction -->
+    <center>
+         <br>
+            <br>
+               <br>
+                  <br>
+    <form action="{{ url_for('predict')}}"method="post">
+       
+          <br>
+            <br>
+              <br>
+                <br>
+                  <br>
+                    <br>
+                      <br>
+                        <br>
+                          <br>
+                           <br>
+                            <br>
+                             <br>
+                              <br>
+                               <br>
+                                <br>
+                                 <br>
+                                  <br>
+                                   <br>
+                                    <br>
+                                     <br>
+                                      <br>
+                                        <br>
+                                        
+                                    
+
+        <h1>Inputs for the fraud detection</h1>
+        
+    	<input type="text" name="V1" placeholder="V1" required="required" />
+        <input type="text" name="V2" placeholder="V2" required="required" />
+		<input type="text" name="V3" placeholder="V3" required="required" />
+        <input type="text" name="V4" placeholder="V4" required="required" />
+            <input type="text" name="V5" placeholder="V5" required="required" />
+		
+        
+
+		<br>
+    	<input type="text" name="V6" placeholder="V6" required="required" />
+        <input type="text" name="V7" placeholder="V7" required="required" />
+		<input type="text" name="V8" placeholder="V8" required="required" />
+        <input type="text" name="V9" placeholder="V9" required="required" />
+            <input type="text" name="V10" placeholder="V10" required="required" />
+    	
+        
+		
+		<br>
+    	<input type="text" name="V11" placeholder="V11" required="required" />
+        <input type="text" name="V12" placeholder="V12" required="required" />
+		<input type="text" name="V13" placeholder="V13" required="required" />
+        <input type="text" name="V14" placeholder="V14" required="required" />
+            <input type="text" name="V15" placeholder="V15" required="required" />
+    	
+        
+		
+    	<br>
+    	<input type="text" name="V16" placeholder="V16" required="required" />
+        <input type="text" name="V17" placeholder="V17" required="required" />
+		<input type="text" name="V18" placeholder="V18" required="required" />
+        <input type="text" name="V19" placeholder="V19" required="required" />
+    <input type="text" name="V20" placeholder="V20" required="required" />
+    	
+        
+			<br>
+
+
+      
+      <input type="text" name="V21" placeholder="V21" required="required" />
+        <input type="text" name="V22" placeholder="V22" required="required" />
+    <input type="text" name="V23" placeholder="V23" required="required" />
+        <input type="text" name="V24" placeholder="V24" required="required" />
+    <input type="text" name="V25" placeholder="V25" required="required" />
+      
+        
+      <br>
+      <input type="text" name="V26" placeholder="V26" required="required" />
+	<input type="text" name="V27" placeholder="V27" required="required" />
+	<input type="text" name="V28" placeholder="V28" required="required" />
+	<input type="text" name="scaled_amount" placeholder="scaled_amount" required="required" />
+      <br>
+
+
+      
+        
+        <!-- Show button -->
+         <div class="button_cont" align="center"><a class="button_css" href="https://github.com/shivamsingh96" target="_blank" rel="nofollow noopener">
+            <button type="submit" class="btn btn-primary btn-block btn-large"><strong>Predict Fraud Transaction</strong></button></a>
+        </div>
+        
+    </form>
+    </center>
+   
+   <!-- Show predicted output using ML model --> 
+   <div>
+       <center>
+   <h1>{{ prediction_text }}</h1>
+       </center>
+   </div>
+
+ </div>
+
+</body>
+</html>
