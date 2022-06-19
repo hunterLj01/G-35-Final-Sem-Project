@@ -1,6 +1,6 @@
 # G-35-Final-Sem-Project
 # This a B.Tech Final Year Project work.
-# Credit card Fraud Detection using Machine Learning.Web application implementation done by Flask.
+# Credit card Fraud Detection using Machine Learning.Web application implementation done by Flask
 
 Instructions to Run the Project:
 Download and install Anaconda(Recommended) or you can also work with Virtual Studio.
